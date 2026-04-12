@@ -1,0 +1,34 @@
+/* app/globals.css */
+
+:root {
+    --background: #ffffff;
+    --foreground: #171717;
+}
+
+body {
+    color: var(--foreground);
+    background: var(--background);
+    margin: 0;
+    padding: 0;
+    font-family:
+        -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
+        Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* リンクのデフォルト設定 */
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* ボタンやセレクトボックスの微調整 */
+select,
+button {
+    font-family: inherit;
+}
