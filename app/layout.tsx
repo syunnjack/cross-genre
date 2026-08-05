@@ -1,3 +1,10 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "暮らしの比較ポータル｜車・不動産・蓄電池をまとめて比較",
+    description: "クルマの買取・不動産・蓄電池補助金など、暮らしに関わるさまざまな比較情報をジャンル横断でまとめたポータルサイトです。",
+};
+
 export default function RootLayout({
     children,
 }: {
