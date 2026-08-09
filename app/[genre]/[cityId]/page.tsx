@@ -1,9 +1,16 @@
 import cities from "@/data/cities.json";
 import genresData from "@/data/genres.json";
+import subsidyFacts from "@/data/subsidy-facts.json";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
 const genres: any = genresData;
+
+const subsidyStatusLabel: Record<string, string> = {
+    found: "実施中",
+    closed: "予算上限に達し受付終了",
+    not_found: "制度なし（公式確認済み）",
+};
 
 export async function generateStaticParams() {
     const paths = [];
@@ -29,6 +36,9 @@ export default async function Page({
 
     const otherGenres = Object.entries(genres).filter(([key]) => key !== genre) as [string, any][];
     const citiesInSamePref = cities.filter((c) => c.pref === city.pref && c.id !== city.id);
+
+    const cityFacts = (subsidyFacts.cities as Record<string, any>)[cityId];
+    const fact = (genre === "battery" || genre === "solar") && cityFacts ? cityFacts[genre] : null;
 
     return (
         <main className="detail">
@@ -73,6 +83,25 @@ export default async function Page({
                     <p className="pending">この地域・ジャンルの提携先は現在準備中です。近日公開予定ですので、しばらくお待ちください。</p>
                 )}
             </section>
+
+            {fact && (
+                <section className="subsidy-fact" data-status={fact.status}>
+                    <h2>
+                        {city.name}の{genre === "battery" ? "蓄電池" : "太陽光発電"}補助金制度
+                    </h2>
+                    <p className="subsidy-fact-status">{subsidyStatusLabel[fact.status]}</p>
+                    {fact.programName && <p className="subsidy-fact-name">{fact.programName}</p>}
+                    <p className="subsidy-fact-summary">{fact.summary}</p>
+                    {fact.period && <p className="subsidy-fact-period">{fact.period}</p>}
+                    <p className="subsidy-fact-source">
+                        出典：
+                        <a href={fact.sourceUrl} target="_blank" rel="nofollow noopener noreferrer">
+                            {fact.sourceLabel}
+                        </a>
+                        （{subsidyFacts.asOf}）
+                    </p>
+                </section>
+            )}
 
             <section className="content-body">
                 <p>
