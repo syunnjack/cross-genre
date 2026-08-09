@@ -10,9 +10,8 @@
             "スズキ ワゴンR"
         ],
         "color": "#e11d48",
-        "cta": "最高値の買取店をチェック",
-        "aspUrl": "https://px.a8.net/...",
-        "points": ["最短45秒の入力", "最大10社比較", "平均16万円アップ"]
+        "points": ["最短45秒の入力", "最大10社比較", "平均16万円アップ"],
+        "offers": []
     },
     "fudousan": {
         "name": "不動産売却",
@@ -20,13 +19,12 @@
         "target": "物件種別",
         "items": ["分譲マンション", "一戸建て", "土地・更地"],
         "color": "#0369a1",
-        "cta": "今の売却相場を確認する",
-        "aspUrl": "https://t.afi-b.com/...",
         "points": [
             "全国対応・完全無料",
             "大手から地元企業まで",
             "プライバシー厳守"
-        ]
+        ],
+        "offers": []
     },
     "battery": {
         "name": "蓄電池補助金",
@@ -34,8 +32,202 @@
         "target": "メーカー",
         "items": ["シャープ", "パナソニック", "京セラ", "ニチコン"],
         "color": "#22c55e",
-        "cta": "補助金を活用して見積もり",
-        "aspUrl": "https://t.afi-b.com/...",
-        "points": ["2026年最新データ", "最大補助額を表示", "地図で業者を確認"]
+        "points": ["自治体ごとの補助制度に対応", "最大補助額を確認", "地図で施工業者を確認"],
+        "offers": [
+            {
+                "label": "エコエネハウス",
+                "cta": "補助金申請成功率100%の実績で見積もり",
+                "url": "https://px.a8.net/svt/ejp?a8mat=4B41ZC+9KS8AA+5UVO+5YJRM",
+                "img": "https://www14.a8.net/0.gif?a8mat=4B41ZC+9KS8AA+5UVO+5YJRM"
+            },
+            {
+                "label": "AD-HOME",
+                "cta": "太陽光パネル・蓄電池をお得に導入",
+                "url": "https://px.a8.net/svt/ejp?a8mat=4B41ZC+9N5YPE+5K96+5YJRM",
+                "img": "https://www13.a8.net/0.gif?a8mat=4B41ZC+9N5YPE+5K96+5YJRM"
+            },
+            {
+                "label": "ゼロスタート ソーラー（東京都限定）",
+                "cta": "初期費用ゼロで太陽光発電と蓄電池を設置",
+                "url": "https://px.a8.net/svt/ejp?a8mat=4B41ZC+9NREB6+5R80+5YJRM",
+                "img": "https://www19.a8.net/0.gif?a8mat=4B41ZC+9NREB6+5R80+5YJRM",
+                "note": "東京都限定のサービスです"
+            },
+            {
+                "label": "東京ガス",
+                "cta": "東京ガスの太陽光発電・蓄電池",
+                "url": "https://px.a8.net/svt/ejp?a8mat=4B41ZC+9OY9IQ+5T60+5YRHE",
+                "img": "https://www11.a8.net/0.gif?a8mat=4B41ZC+9OY9IQ+5T60+5YRHE"
+            },
+            {
+                "label": "エコ×エネの相談窓口",
+                "cta": "完全無料の蓄電池一括見積もり",
+                "url": "https://px.a8.net/svt/ejp?a8mat=4B41ZC+9LZ3HU+5CRG+5YJRM",
+                "img": "https://www16.a8.net/0.gif?a8mat=4B41ZC+9LZ3HU+5CRG+5YJRM"
+            },
+            {
+                "label": "タイナビ蓄電池",
+                "cta": "蓄電池の無料一括比較",
+                "url": "https://px.a8.net/svt/ejp?a8mat=4B41ZC+9LDNW2+2AG2+15S78I",
+                "img": "https://www16.a8.net/0.gif?a8mat=4B41ZC+9LDNW2+2AG2+15S78I"
+            }
+        ]
+    },
+    "solar": {
+        "name": "太陽光発電補助金",
+        "title": "太陽光発電補助金ナビ",
+        "target": "メーカー",
+        "items": ["パナソニック", "シャープ", "長州産業", "カナディアン・ソーラー"],
+        "color": "#f59e0b",
+        "points": ["国・自治体の補助制度に対応", "売電・自家消費プランを比較", "地図で施工業者を確認"],
+        "offers": [
+            {
+                "label": "ソーラーパートナーズ",
+                "cta": "ソーラーパートナーズで見積もりを取る",
+                "url": "https://px.a8.net/svt/ejp?a8mat=4B41ZC+93INQQ+3LME+5YRHE",
+                "img": "https://www10.a8.net/0.gif?a8mat=4B41ZC+93INQQ+3LME+5YRHE"
+            },
+            {
+                "label": "AD-HOME",
+                "cta": "太陽光パネル・蓄電池をお得に導入",
+                "url": "https://px.a8.net/svt/ejp?a8mat=4B41ZC+9N5YPE+5K96+5YJRM",
+                "img": "https://www13.a8.net/0.gif?a8mat=4B41ZC+9N5YPE+5K96+5YJRM"
+            },
+            {
+                "label": "ゼロスタート ソーラー（東京都限定）",
+                "cta": "初期費用ゼロで太陽光発電と蓄電池を設置",
+                "url": "https://px.a8.net/svt/ejp?a8mat=4B41ZC+9NREB6+5R80+5YJRM",
+                "img": "https://www19.a8.net/0.gif?a8mat=4B41ZC+9NREB6+5R80+5YJRM",
+                "note": "東京都限定のサービスです"
+            },
+            {
+                "label": "東京ガス",
+                "cta": "東京ガスの太陽光発電・蓄電池",
+                "url": "https://px.a8.net/svt/ejp?a8mat=4B41ZC+9OY9IQ+5T60+5YRHE",
+                "img": "https://www11.a8.net/0.gif?a8mat=4B41ZC+9OY9IQ+5T60+5YRHE"
+            }
+        ]
+    },
+    "ev": {
+        "name": "EV・PHV車補助金",
+        "title": "EV・PHV車補助金ナビ",
+        "target": "車種",
+        "items": ["日産 リーフ", "トヨタ bZ4X", "三菱 アウトランダーPHEV", "テスラ Model 3"],
+        "color": "#7c3aed",
+        "points": ["国のCEV補助金に対応", "自治体上乗せ補助も確認", "対象車種を一覧で比較"],
+        "offers": []
+    },
+    "v2h": {
+        "name": "V2H充放電設備補助金",
+        "title": "V2H補助金ナビ",
+        "target": "設備タイプ",
+        "items": ["普通充放電V2H", "急速充放電V2H", "蓄電池連携型V2H"],
+        "color": "#0891b2",
+        "points": ["電気自動車を家庭用電源として活用", "国・自治体の補助金に対応", "停電時の非常用電源にも"],
+        "offers": [
+            {
+                "label": "V2H導入サポート",
+                "cta": "V2H補助金を使ってお得に設置",
+                "url": "https://px.a8.net/svt/ejp?a8mat=4B41ZC+9RBZXU+3EMG+3SZUAQ",
+                "img": "https://www10.a8.net/0.gif?a8mat=4B41ZC+9RBZXU+3EMG+3SZUAQ"
+            }
+        ]
+    },
+    "window": {
+        "name": "窓・断熱リフォーム補助金",
+        "title": "窓・断熱リフォーム補助金ナビ",
+        "target": "工事内容",
+        "items": ["内窓設置(二重窓)", "ガラス交換", "玄関ドア交換", "断熱材施工"],
+        "color": "#16a34a",
+        "points": ["先進的窓リノベ事業などに対応", "光熱費の削減効果を試算", "地元の施工業者を紹介"],
+        "offers": []
+    },
+    "waterheater": {
+        "name": "給湯器補助金",
+        "title": "給湯器補助金ナビ",
+        "target": "メーカー",
+        "items": ["リンナイ", "ノーリツ", "パナソニック", "ダイキン"],
+        "color": "#db2777",
+        "points": ["給湯省エネ事業などに対応", "エコキュート・エコジョーズを比較", "地元の施工業者を紹介"],
+        "offers": []
+    },
+    "gaiheki": {
+        "name": "外壁塗装リフォーム",
+        "title": "外壁塗装リフォームナビ",
+        "target": "工事内容",
+        "items": ["外壁塗り替え", "外壁張り替え", "コーキング打ち替え", "付帯部塗装"],
+        "color": "#ea580c",
+        "points": ["複数業者の見積もりを比較", "自治体の改修補助制度も確認", "地元の施工業者を紹介"],
+        "offers": []
+    },
+    "business": {
+        "name": "ビジネスマッチング",
+        "title": "ビジネスマッチングナビ",
+        "target": "利用目的",
+        "items": ["外注先を探す", "販路を広げる", "提携先を探す", "人材を探す"],
+        "color": "#334155",
+        "points": ["全国の事業者とマッチング", "業種・目的別に検索", "無料で利用登録"],
+        "offers": [
+            {
+                "label": "URUMAP",
+                "cta": "ビジネスマッチングサービス【URUMAP】",
+                "url": "https://px.a8.net/svt/ejp?a8mat=4BA1PD+9D1LF6+3SPO+A94YS2",
+                "img": "https://www10.a8.net/0.gif?a8mat=4BA1PD+9D1LF6+3SPO+A94YS2"
+            }
+        ]
+    },
+    "signage": {
+        "name": "デジタルサイネージ",
+        "title": "デジタルサイネージナビ",
+        "target": "設置目的",
+        "items": ["店舗の集客", "屋外広告", "イベント演出", "受付案内"],
+        "color": "#9333ea",
+        "points": ["店舗・イベントの集客力を強化", "設置目的別に製品を比較", "導入事例を確認"],
+        "offers": [
+            {
+                "label": "3D Phantom",
+                "cta": "インパクトのある3Dサイネージ【3D Phantom】",
+                "url": "https://px.a8.net/svt/ejp?a8mat=4BA1PD+9HT29E+3SPO+99EYHE",
+                "img": "https://www19.a8.net/0.gif?a8mat=4BA1PD+9HT29E+3SPO+99EYHE"
+            },
+            {
+                "label": "KANBEI SIGN",
+                "cta": "補助金を活用してお得に導入可能！【KANBEI SIGN】",
+                "url": "https://px.a8.net/svt/ejp?a8mat=4BA1PD+9G0RG2+3SPO+BETB4I",
+                "img": "https://www19.a8.net/0.gif?a8mat=4BA1PD+9G0RG2+3SPO+BETB4I"
+            }
+        ]
+    },
+    "telephony": {
+        "name": "クラウド電話・ビジネスフォン",
+        "title": "クラウド電話ナビ",
+        "target": "利用シーン",
+        "items": ["在宅勤務の内線化", "複数拠点の電話統合", "スマホでの外線発着信", "コールセンター運用"],
+        "color": "#2563eb",
+        "points": ["スマホで内線・外線に対応", "初期費用を抑えて導入", "複数拠点をまとめて管理"],
+        "offers": [
+            {
+                "label": "CLOUDPHONE Plus",
+                "cta": "スマホで内線・外線ができるテレフォンシステム【CLOUDPHONE Plus】",
+                "url": "https://px.a8.net/svt/ejp?a8mat=4BA1PD+9IEHV6+3SPO+9R9YMQ",
+                "img": "https://www12.a8.net/0.gif?a8mat=4BA1PD+9IEHV6+3SPO+9R9YMQ"
+            }
+        ]
+    },
+    "inbound": {
+        "name": "インバウンド対策",
+        "title": "インバウンド対策ナビ",
+        "target": "対応内容",
+        "items": ["多言語対応", "キャッシュレス決済", "Wi-Fi環境整備", "免税対応"],
+        "color": "#059669",
+        "points": ["訪日外国人客の受け入れ体制を強化", "対応内容別に比較", "導入事例を確認"],
+        "offers": [
+            {
+                "label": "インバウンドパッケージ",
+                "cta": "インバウンド対策に！【インバウンドパッケージ】",
+                "url": "https://px.a8.net/svt/ejp?a8mat=4BA1PD+9ETW8I+3SPO+AWYAZ6",
+                "img": "https://www14.a8.net/0.gif?a8mat=4BA1PD+9ETW8I+3SPO+AWYAZ6"
+            }
+        ]
     }
 }
