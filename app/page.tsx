@@ -21,6 +21,13 @@ const genreDescriptions: Record<string, string> = {
 const personalGenres = ["kuruma", "fudousan", "battery", "solar", "ev", "v2h", "window", "waterheater", "gaiheki"];
 const businessGenres = ["business", "signage", "telephony", "inbound"];
 
+const sampleCities = [
+    { id: "tokyo23", name: "東京23区" },
+    { id: "osaka", name: "大阪市" },
+    { id: "nagoya", name: "名古屋市" },
+    { id: "fukuoka", name: "福岡市" },
+];
+
 function GenreGrid({ keys, genresData }: { keys: string[]; genresData: Record<string, any> }) {
     return (
         <section className="genre-grid" aria-label="ジャンル一覧">
@@ -31,7 +38,11 @@ function GenreGrid({ keys, genresData }: { keys: string[]; genresData: Record<st
                     <article className="genre-card" key={key} style={{ borderTopColor: data.color }}>
                         <h2>{data.title}</h2>
                         <p>{genreDescriptions[key]}</p>
-                        <Link href={`/${key}/tokyo23`}>東京23区から見る →</Link>
+                        <div className="genre-card-cities">
+                            {sampleCities.map((city) => (
+                                <Link href={`/${key}/${city.id}`} key={city.id}>{city.name}</Link>
+                            ))}
+                        </div>
                     </article>
                 );
             })}
