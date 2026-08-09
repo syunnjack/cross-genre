@@ -51,13 +51,15 @@
                 "cta": "初期費用ゼロで太陽光発電と蓄電池を設置",
                 "url": "https://px.a8.net/svt/ejp?a8mat=4B41ZC+9NREB6+5R80+5YJRM",
                 "img": "https://www19.a8.net/0.gif?a8mat=4B41ZC+9NREB6+5R80+5YJRM",
-                "note": "東京都限定のサービスです"
+                "note": "東京都限定のサービスです",
+                "prefectures": ["東京都"]
             },
             {
                 "label": "東京ガス",
                 "cta": "東京ガスの太陽光発電・蓄電池",
                 "url": "https://px.a8.net/svt/ejp?a8mat=4B41ZC+9OY9IQ+5T60+5YRHE",
-                "img": "https://www11.a8.net/0.gif?a8mat=4B41ZC+9OY9IQ+5T60+5YRHE"
+                "img": "https://www11.a8.net/0.gif?a8mat=4B41ZC+9OY9IQ+5T60+5YRHE",
+                "prefectures": ["東京都", "神奈川県", "埼玉県", "千葉県"]
             },
             {
                 "label": "エコ×エネの相談窓口",

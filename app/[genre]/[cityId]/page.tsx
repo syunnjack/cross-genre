@@ -40,6 +40,10 @@ export default async function Page({
     const cityFacts = (subsidyFacts.cities as Record<string, any>)[cityId];
     const fact = (genre === "battery" || genre === "solar") && cityFacts ? cityFacts[genre] : null;
 
+    const applicableOffers = ((data.offers ?? []) as any[]).filter(
+        (offer) => !offer.prefectures || offer.prefectures.includes(city.pref)
+    );
+
     return (
         <main className="detail">
             <p className="breadcrumb">
@@ -63,9 +67,9 @@ export default async function Page({
                     ))}
                 </div>
 
-                {data.offers && data.offers.length > 0 ? (
+                {applicableOffers.length > 0 ? (
                     <div className="offer-list">
-                        {data.offers.map((offer: any) => (
+                        {applicableOffers.map((offer: any) => (
                             <div className="offer" key={offer.label}>
                                 <a href={offer.url} target="_blank" rel="nofollow noopener noreferrer">
                                     【公式】{offer.cta}
