@@ -21,6 +21,35 @@ const genreDescriptions: Record<string, string> = {
 const personalGenres = ["kuruma", "fudousan", "battery", "solar", "ev", "v2h", "window", "waterheater", "gaiheki"];
 const businessGenres = ["business", "signage", "telephony", "inbound"];
 
+const SITE_URL = "https://kurabe-kurashi.jp";
+const SITE_NAME = "暮らしとビジネスの比較ポータル";
+const SITE_DESCRIPTION =
+    "中古車買取・不動産売却・蓄電池や太陽光発電などの住宅補助金から、ビジネスマッチングやサイネージ、クラウド電話などの事業者向けサービスまで、全国主要都市でまとめて比較できるポータルサイトです。";
+
+// 検索エンジンとAIにサイトの素性を渡す。JSON.stringifyはXSSを除去しないため、
+// Next.jsの推奨どおり "<" をユニコード表記に置き換えてから埋め込む。
+const jsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "WebSite",
+            "@id": `${SITE_URL}/#website`,
+            url: SITE_URL,
+            name: SITE_NAME,
+            description: SITE_DESCRIPTION,
+            inLanguage: "ja",
+            publisher: { "@id": `${SITE_URL}/#organization` },
+        },
+        {
+            "@type": "Organization",
+            "@id": `${SITE_URL}/#organization`,
+            name: SITE_NAME,
+            url: SITE_URL,
+            description: SITE_DESCRIPTION,
+        },
+    ],
+};
+
 const sampleCities = [
     { id: "tokyo23", name: "東京23区" },
     { id: "osaka", name: "大阪市" },
@@ -57,6 +86,12 @@ export default function Home() {
 
     return (
         <main className="home">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c"),
+                }}
+            />
             <header className="hero">
                 <p className="eyebrow">暮らしとビジネスの比較ポータル</p>
                 <h1>車・住宅補助金からビジネスツールまで、まとめて比較</h1>
