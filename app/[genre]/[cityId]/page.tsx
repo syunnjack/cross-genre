@@ -3,6 +3,7 @@ import genresData from "@/data/genres.json";
 import subsidyFacts from "@/data/subsidy-facts.json";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { applicableOffers, isPlaceholderPage } from "@/lib/offers";
 
 const genres: any = genresData;
 
@@ -53,6 +54,11 @@ export async function generateMetadata({
         title,
         description,
         alternates: { canonical: url },
+        // 提携先が無いページは検索対象から外す。リンクはたどらせたいので follow は残す。
+        // data/genres.json に提携先を足せば自動的に検索対象へ戻る。
+        robots: isPlaceholderPage(genre, city.pref)
+            ? { index: false, follow: true }
+            : undefined,
         openGraph: {
             title,
             description,
@@ -91,9 +97,7 @@ export default async function Page({
     const cityFacts = (subsidyFacts.cities as Record<string, any>)[cityId];
     const fact = (genre === "battery" || genre === "solar") && cityFacts ? cityFacts[genre] : null;
 
-    const applicableOffers = ((data.offers ?? []) as any[]).filter(
-        (offer) => !offer.prefectures || offer.prefectures.includes(city.pref)
-    );
+    const offers = applicableOffers(genre, city.pref);
 
     return (
         <main className="detail">
@@ -118,9 +122,9 @@ export default async function Page({
                     ))}
                 </div>
 
-                {applicableOffers.length > 0 ? (
+                {offers.length > 0 ? (
                     <div className="offer-list">
-                        {applicableOffers.map((offer: any) => (
+                        {offers.map((offer: any) => (
                             <div className="offer" key={offer.label}>
                                 <a href={offer.url} target="_blank" rel="nofollow noopener noreferrer">
                                     【公式】{offer.cta}
