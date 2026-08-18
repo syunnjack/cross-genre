@@ -183,6 +183,23 @@ export default async function Page({
                     {fact.programName && <p className="subsidy-fact-name">{fact.programName}</p>}
                     <p className="subsidy-fact-summary">{fact.summary}</p>
                     {fact.period && <p className="subsidy-fact-period">{fact.period}</p>}
+                    {Array.isArray(fact.alternatives) && fact.alternatives.length > 0 && (
+                        <div className="subsidy-alternatives">
+                            {/* 市の制度が無い・受付が終わっている場合でも、県や国の制度が使えることがある */}
+                            <h3>県や国の制度</h3>
+                            <ul>
+                                {fact.alternatives.map((alt: any) => (
+                                    <li key={alt.url}>
+                                        <a href={alt.url} target="_blank" rel="nofollow noopener noreferrer">
+                                            {alt.label}
+                                        </a>
+                                        <span>{alt.summary}</span>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                    )}
+
                     <p className="subsidy-fact-source">
                         出典：
                         <a href={fact.sourceUrl} target="_blank" rel="nofollow noopener noreferrer">

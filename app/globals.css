@@ -396,6 +396,33 @@ button {
     color: #737373;
 }
 
+.subsidy-alternatives {
+    margin-top: 16px;
+    padding-top: 12px;
+    border-top: 1px dashed #d4d4d4;
+}
+.subsidy-alternatives h3 {
+    font-size: 14px;
+    margin: 0 0 8px;
+}
+.subsidy-alternatives ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.subsidy-alternatives li {
+    margin-bottom: 10px;
+    font-size: 13px;
+    line-height: 1.7;
+}
+.subsidy-alternatives li a {
+    display: block;
+    font-weight: 700;
+}
+.subsidy-alternatives li span {
+    color: #525252;
+}
+
 @media (max-width: 600px) {
     .genre-grid {
         grid-template-columns: 1fr;

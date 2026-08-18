@@ -246,13 +246,42 @@
         "status": "not_found",
         "summary": "個人住宅向けに蓄電池の設置費用を補助する市の制度は確認できませんでした。市は県内一括発注で安く買える共同購入事業や、静岡市版ZEHの助成を実施しています。",
         "sourceUrl": "https://www.city.shizuoka.lg.jp/p009750.html",
-        "sourceLabel": "静岡市 公式サイト（支援制度・補助金一覧）"
+        "sourceLabel": "静岡市 公式サイト（支援制度・補助金一覧）",
+        "alternatives": [
+          {
+            "label": "静岡県 太陽光発電設備等共同購入支援事業",
+            "summary": "県が募った参加者の分をまとめて発注することで、割引価格で購入できる仕組み。太陽光10kW未満、蓄電池のいずれも対象。",
+            "url": "https://www.pref.shizuoka.jp/sangyoshigoto/kigyoshien/energy/1053443.html"
+          },
+          {
+            "label": "ふじのくに0円ソーラー事業",
+            "summary": "事業者の負担で太陽光と蓄電池を設置し、契約期間の終了後に設備が建物所有者へ無償で譲渡される仕組み。",
+            "url": "https://www.pref.shizuoka.jp/sangyoshigoto/kigyoshien/energy/1047855.html"
+          },
+          {
+            "label": "国のDR家庭用蓄電池事業（令和7年度補正）",
+            "summary": "国の家庭用蓄電システム導入支援。2026年5月29日に交付申請額が予算に達し、公募は終了している。",
+            "url": "https://dr-battery.sii.or.jp/r7h/"
+          }
+        ]
       },
       "solar": {
         "status": "not_found",
         "summary": "個人住宅向けに太陽光発電設備そのものを補助する市の制度は確認できませんでした。市の「グリーン電力地産地消設備整備事業補助金」はPPA事業者が対象です。共同購入事業と静岡市版ZEHの助成があります。",
         "sourceUrl": "https://www.city.shizuoka.lg.jp/p009750.html",
-        "sourceLabel": "静岡市 公式サイト（支援制度・補助金一覧）"
+        "sourceLabel": "静岡市 公式サイト（支援制度・補助金一覧）",
+        "alternatives": [
+          {
+            "label": "静岡県 太陽光発電設備等共同購入支援事業",
+            "summary": "県が募った参加者の分をまとめて発注することで、割引価格で購入できる仕組み。太陽光10kW未満、蓄電池のいずれも対象。",
+            "url": "https://www.pref.shizuoka.jp/sangyoshigoto/kigyoshien/energy/1053443.html"
+          },
+          {
+            "label": "ふじのくに0円ソーラー事業",
+            "summary": "事業者の負担で太陽光と蓄電池を設置し、契約期間の終了後に設備が建物所有者へ無償で譲渡される仕組み。",
+            "url": "https://www.pref.shizuoka.jp/sangyoshigoto/kigyoshien/energy/1047855.html"
+          }
+        ]
       }
     },
     "hamamatsu": {
@@ -278,7 +307,19 @@
         "status": "not_found",
         "summary": "堺市スマートハウス化支援事業の補助対象は太陽光発電システムと、それと組み合わせるエコキュートなどで、定置用蓄電池は対象として記載されていません。",
         "sourceUrl": "https://www.city.sakai.lg.jp/kurashi/gomi/ondanka/smarthouse/sumarthouse/index.html",
-        "sourceLabel": "堺市 公式サイト"
+        "sourceLabel": "堺市 公式サイト",
+        "alternatives": [
+          {
+            "label": "大阪府 太陽光発電及び蓄電池システムの共同購入支援事業",
+            "summary": "府内から参加者を募り、まとめて発注することで価格を下げる仕組み。令和8年度の登録期間は3月18日〜9月30日。",
+            "url": "https://www.pref.osaka.lg.jp/o120020/eneseisaku/kyodo01/index.html"
+          },
+          {
+            "label": "国のDR家庭用蓄電池事業（令和7年度補正）",
+            "summary": "国の家庭用蓄電システム導入支援。2026年5月29日に交付申請額が予算に達し、公募は終了している。",
+            "url": "https://dr-battery.sii.or.jp/r7h/"
+          }
+        ]
       },
       "solar": {
         "status": "found",
@@ -386,7 +427,19 @@
         "summary": "家庭用蓄電池は対象経費の3分の1で上限20万円。既存住宅が対象でしたが、予算上限に達し予約申請の受付は終了しました。本年度の追加募集は予定されていません。",
         "period": "予約申請は令和8年5月25日開始で受付終了。すでに予約済みの分の交付申請期限は令和9年1月29日。",
         "sourceUrl": "https://www.city.takamatsu.kagawa.jp/kurashi/kurashi/kankyo/ondanka/scPVR7.html",
-        "sourceLabel": "高松市 公式サイト"
+        "sourceLabel": "高松市 公式サイト",
+        "alternatives": [
+          {
+            "label": "令和8年度 かがわスマートハウス促進事業補助金（香川県）",
+            "summary": "県の制度。ZEHの新築、蓄電池の設置、V2Hの設置、断熱改修が対象。交付申請の予約は令和8年5月11日10時から受付。",
+            "url": "https://www.pref.kagawa.lg.jp/kankyoseisaku/chikyu/saiene/r8kagawasmarthouse.html"
+          },
+          {
+            "label": "国のDR家庭用蓄電池事業（令和7年度補正）",
+            "summary": "国の家庭用蓄電システム導入支援。2026年5月29日に交付申請額が予算に達し、公募は終了している。",
+            "url": "https://dr-battery.sii.or.jp/r7h/"
+          }
+        ]
       },
       "solar": {
         "status": "closed",
@@ -394,7 +447,14 @@
         "summary": "太陽光発電設備は1kWあたり8万円で上限45万円。FIT・FIP認定を取らず、発電量の30%以上を自家消費することが要件でしたが、予算上限に達し予約申請の受付は終了しました。",
         "period": "予約申請は令和8年5月25日開始で受付終了。すでに予約済みの分の交付申請期限は令和9年1月29日。",
         "sourceUrl": "https://www.city.takamatsu.kagawa.jp/kurashi/kurashi/kankyo/ondanka/scPVR7.html",
-        "sourceLabel": "高松市 公式サイト"
+        "sourceLabel": "高松市 公式サイト",
+        "alternatives": [
+          {
+            "label": "令和8年度 かがわスマートハウス促進事業補助金（香川県）",
+            "summary": "県の制度。ZEHの新築、蓄電池の設置、V2Hの設置、断熱改修が対象。交付申請の予約は令和8年5月11日10時から受付。",
+            "url": "https://www.pref.kagawa.lg.jp/kankyoseisaku/chikyu/saiene/r8kagawasmarthouse.html"
+          }
+        ]
       }
     },
     "kitakyushu": {
@@ -402,13 +462,32 @@
         "status": "not_found",
         "summary": "個人住宅向けに蓄電池を補助する市の制度は確認できませんでした。市の補助は中小企業向けが中心です。福岡県が実施する太陽光発電設備・蓄電池の共同購入事業には参加できます。",
         "sourceUrl": "https://www.city.kitakyushu.lg.jp/kurashi/menu01_0367.html",
-        "sourceLabel": "北九州市 公式サイト（補助制度・税制）"
+        "sourceLabel": "北九州市 公式サイト（補助制度・税制）",
+        "alternatives": [
+          {
+            "label": "福岡県 太陽光発電設備・蓄電池の共同購入",
+            "summary": "複数の家庭が集まる購買力で導入費用を下げる仕組み。エントリーは無料で、施工事業者の選定後に見積もりが届く。",
+            "url": "https://www.pref.fukuoka.lg.jp/contents/taiyoukou-kyoudou.html"
+          },
+          {
+            "label": "国のDR家庭用蓄電池事業（令和7年度補正）",
+            "summary": "国の家庭用蓄電システム導入支援。2026年5月29日に交付申請額が予算に達し、公募は終了している。",
+            "url": "https://dr-battery.sii.or.jp/r7h/"
+          }
+        ]
       },
       "solar": {
         "status": "not_found",
         "summary": "個人住宅向けに太陽光発電設備を補助する市の制度は確認できませんでした。市の補助は中小企業向けが中心です。福岡県が実施する共同購入事業には参加できます。",
         "sourceUrl": "https://www.city.kitakyushu.lg.jp/kurashi/menu01_0367.html",
-        "sourceLabel": "北九州市 公式サイト（補助制度・税制）"
+        "sourceLabel": "北九州市 公式サイト（補助制度・税制）",
+        "alternatives": [
+          {
+            "label": "福岡県 太陽光発電設備・蓄電池の共同購入",
+            "summary": "複数の家庭が集まる購買力で導入費用を下げる仕組み。エントリーは無料で、施工事業者の選定後に見積もりが届く。",
+            "url": "https://www.pref.fukuoka.lg.jp/contents/taiyoukou-kyoudou.html"
+          }
+        ]
       }
     },
     "kumamoto": {
@@ -434,13 +513,32 @@
         "status": "not_found",
         "summary": "那覇市の住宅用省エネ設備補助事業は令和3年度で終了しており、蓄電池を補助する市の制度は確認できませんでした。国の制度は利用できます。",
         "sourceUrl": "https://www.info.city.naha.okinawa.jp/kankyo/009748.html",
-        "sourceLabel": "那覇市 公式サイト（電子相談システム）"
+        "sourceLabel": "那覇市 公式サイト（電子相談システム）",
+        "alternatives": [
+          {
+            "label": "沖縄県 クリーンエネルギー導入ワンストップ相談窓口",
+            "summary": "国や県の補助金・税制などの支援制度について情報提供と相談を受け付けている県の窓口。",
+            "url": "https://www.pref.okinawa.jp/machizukuri/energy/1013596/1013598.html"
+          },
+          {
+            "label": "国のDR家庭用蓄電池事業（令和7年度補正）",
+            "summary": "国の家庭用蓄電システム導入支援。2026年5月29日に交付申請額が予算に達し、公募は終了している。",
+            "url": "https://dr-battery.sii.or.jp/r7h/"
+          }
+        ]
       },
       "solar": {
         "status": "not_found",
         "summary": "那覇市の住宅用省エネ設備補助事業は令和3年度で終了しており、太陽光発電設備を補助する市の制度は確認できませんでした。国の制度は利用できます。",
         "sourceUrl": "https://www.info.city.naha.okinawa.jp/kankyo/009748.html",
-        "sourceLabel": "那覇市 公式サイト（電子相談システム）"
+        "sourceLabel": "那覇市 公式サイト（電子相談システム）",
+        "alternatives": [
+          {
+            "label": "沖縄県 クリーンエネルギー導入ワンストップ相談窓口",
+            "summary": "国や県の補助金・税制などの支援制度について情報提供と相談を受け付けている県の窓口。",
+            "url": "https://www.pref.okinawa.jp/machizukuri/energy/1013596/1013598.html"
+          }
+        ]
       }
     }
   }
