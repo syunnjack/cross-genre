@@ -5,6 +5,7 @@ import guidesData from "@/data/guides.json";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { applicableOffers, isPlaceholderPage } from "@/lib/offers";
+import { nearbyCities } from "@/lib/nearby";
 
 const genres: any = genresData;
 
@@ -92,8 +93,11 @@ export default async function Page({
 
     if (!city || !data) notFound();
 
-    const otherGenres = Object.entries(genres).filter(([key]) => key !== genre) as [string, any][];
-    const citiesInSamePref = cities.filter((c) => c.pref === city.pref && c.id !== city.id);
+    // 提携先が無いジャンル（「準備中」と出るだけのページ）へは案内しない
+    const otherGenres = (Object.entries(genres) as [string, any][]).filter(
+        ([key]) => key !== genre && !isPlaceholderPage(key, city.pref)
+    );
+    const nearby = nearbyCities(cityId);
 
     const cityFacts = (subsidyFacts.cities as Record<string, any>)[cityId];
     const fact = (genre === "battery" || genre === "solar") && cityFacts ? cityFacts[genre] : null;
@@ -106,6 +110,31 @@ export default async function Page({
             <p className="breadcrumb">
                 <Link href="/">トップへ戻る</Link>
             </p>
+
+            {/* 検索結果に階層が出るようにパンくずを構造化データで示す */}
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "BreadcrumbList",
+                        itemListElement: [
+                            {
+                                "@type": "ListItem",
+                                position: 1,
+                                name: "トップ",
+                                item: "https://kurabe-kurashi.jp/",
+                            },
+                            {
+                                "@type": "ListItem",
+                                position: 2,
+                                name: `${city.name}の${data.name}`,
+                                item: `https://kurabe-kurashi.jp/${genre}/${cityId}`,
+                            },
+                        ],
+                    }),
+                }}
+            />
 
             <header className="detail-header" style={{ borderColor: data.color }}>
                 <p className="area-label">
@@ -231,13 +260,16 @@ export default async function Page({
                 このページは各サービスの比較情報をまとめたものです。補助金の要件や金額、募集期間は自治体と年度によって変わります。申し込みの前に、お住まいの自治体の公式情報を必ずご確認ください。
             </p>
 
-            {citiesInSamePref.length > 0 && (
+            {nearby.length > 0 && (
                 <section className="nearby-cities">
-                    <h2>{city.pref}の他の都市</h2>
+                    <h2>近隣の都市で{data.name}を探す</h2>
                     <ul>
-                        {citiesInSamePref.map((c) => (
+                        {nearby.map((c) => (
                             <li key={c.id}>
-                                <Link href={`/${genre}/${c.id}`}>{c.name}</Link>
+                                <Link href={`/${genre}/${c.id}`}>
+                                    {c.name}
+                                    {c.pref !== city.pref && <span className="nearby-pref">{c.pref}</span>}
+                                </Link>
                             </li>
                         ))}
                     </ul>

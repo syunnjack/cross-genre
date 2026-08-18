@@ -390,6 +390,12 @@ button {
     color: #737373;
 }
 
+.nearby-pref {
+    margin-left: 6px;
+    font-size: 11px;
+    color: #737373;
+}
+
 @media (max-width: 600px) {
     .genre-grid {
         grid-template-columns: 1fr;
