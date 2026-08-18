@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
+    // 各ページの canonical と OG の URL を絶対パスに解決するために必要
+    metadataBase: new URL("https://kurabe-kurashi.jp"),
     title: "暮らしとビジネスの比較ポータル｜車・住宅補助金からビジネスツールまで",
     description: "中古車買取・不動産売却・蓄電池や太陽光発電などの住宅補助金から、ビジネスマッチングやサイネージ、クラウド電話などの事業者向けサービスまで、全国主要都市でまとめて比較できるポータルサイトです。",
 };

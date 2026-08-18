@@ -2,6 +2,12 @@ import Link from "next/link";
 import genresData from "@/data/genres.json";
 import cities from "@/data/cities.json";
 
+// canonical はページごとに指定する。layout.tsx に置くと下層ページにも
+// そのまま継承され、全ページが同じ URL を正規と申告してしまう。
+export const metadata = {
+    alternates: { canonical: "/" },
+};
+
 const genreDescriptions: Record<string, string> = {
     kuruma: "愛車の買取相場を複数社まとめて比較できます。",
     fudousan: "マンション・戸建て・土地の売却相場をまとめて確認できます。",

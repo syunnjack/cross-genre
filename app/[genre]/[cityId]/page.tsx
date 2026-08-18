@@ -12,6 +12,57 @@ const subsidyStatusLabel: Record<string, string> = {
     not_found: "制度なし（公式確認済み）",
 };
 
+// ページごとの title / description を作る。
+// これが無いと 338 ページすべてが layout.tsx の同じ文言を使ってしまい、
+// 検索結果でどのページも同じ見出しになる（クリックされない・重複と判定される）。
+export async function generateMetadata({
+    params,
+}: {
+    params: Promise<{ genre: string; cityId: string }>;
+}) {
+    const { genre, cityId } = await params;
+    const city = cities.find((c) => c.id === cityId);
+    const data = genres[genre];
+
+    if (!city || !data) return {};
+
+    const cityFacts = (subsidyFacts.cities as Record<string, any>)[cityId];
+    const fact = (genre === "battery" || genre === "solar") && cityFacts ? cityFacts[genre] : null;
+
+    // 補助金の実データがある都市は、状況（実施中／終了など）まで書く。
+    // 同じ雛形の説明文が並ばないよう、その都市固有の情報を先に出す。
+    // 要約は長いので最初の一文だけを使う。
+    const factLine = fact
+        ? `補助金は${subsidyStatusLabel[fact.status]}。${fact.summary.split("。")[0]}。`
+        : "";
+
+    const rawDescription = `${city.name}（${city.pref}）の${data.name}。${factLine}${data.items
+        .slice(0, 3)
+        .join("・")}など${data.target}別に、${data.points.slice(0, 2).join("・")}のサービスを比較できます。`;
+
+    // 検索結果で切られない長さに収める（全角120字が目安）
+    const description =
+        rawDescription.length > 120 ? `${rawDescription.slice(0, 119)}…` : rawDescription;
+
+    const url = `/${genre}/${cityId}`;
+    // 「${data.title}」を付けると同じ語が2回出て長くなるため、都道府県名を添える。
+    // 「埼玉県 窓 補助金」のような検索にも当たるようにする狙い。
+    const title = `${city.name}の${data.name}を比較｜${city.pref}`;
+
+    return {
+        title,
+        description,
+        alternates: { canonical: url },
+        openGraph: {
+            title,
+            description,
+            url,
+            type: "website",
+            locale: "ja_JP",
+        },
+    };
+}
+
 export async function generateStaticParams() {
     const paths = [];
     const genreKeys = Object.keys(genres);
