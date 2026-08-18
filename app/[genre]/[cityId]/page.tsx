@@ -1,6 +1,7 @@
 import cities from "@/data/cities.json";
 import genresData from "@/data/genres.json";
 import subsidyFacts from "@/data/subsidy-facts.json";
+import guidesData from "@/data/guides.json";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { applicableOffers, isPlaceholderPage } from "@/lib/offers";
@@ -98,6 +99,7 @@ export default async function Page({
     const fact = (genre === "battery" || genre === "solar") && cityFacts ? cityFacts[genre] : null;
 
     const offers = applicableOffers(genre, city.pref);
+    const guide = (guidesData.genres as Record<string, any>)[genre];
 
     return (
         <main className="detail">
@@ -164,12 +166,70 @@ export default async function Page({
 
             <section className="content-body">
                 <p>
-                    {city.name}（{city.pref}）で{data.name}をお探しの方向けに、対象となる{data.target}や、利用できる制度の概要をまとめています。
+                    {city.name}（{city.pref}）で{data.name}をお探しの方向けに、対象となる{data.target}と、進めるときに見ておく点をまとめています。
                 </p>
-                <p>
-                    補助金は自治体ごとに予算や募集期間が異なり、年度の途中で受付が終了することがあります。実際の申請にあたっては、必ずお住まいの自治体の公式サイトや、上記の提携サービスから提供される最新情報をご確認ください。
-                </p>
+                {guide && <p>{guide.lead}</p>}
             </section>
+
+            {guide && (
+                <>
+                    <section className="guide-steps">
+                        <h2>{data.name}を進めるときの流れ</h2>
+                        <ol>
+                            {guide.steps.map((step: any) => (
+                                <li key={step.title}>
+                                    <h3>{step.title}</h3>
+                                    <p>{step.body}</p>
+                                </li>
+                            ))}
+                        </ol>
+                    </section>
+
+                    <section className="guide-checks">
+                        <h2>比較するときに見ておく点</h2>
+                        <ul>
+                            {guide.checks.map((check: any) => (
+                                <li key={check.title}>
+                                    <h3>{check.title}</h3>
+                                    <p>{check.body}</p>
+                                </li>
+                            ))}
+                        </ul>
+                    </section>
+
+                    <section className="guide-faq">
+                        <h2>よくある質問</h2>
+                        <dl>
+                            {guide.faq.map((item: any) => (
+                                <div key={item.q}>
+                                    <dt>{item.q}</dt>
+                                    <dd>{item.a}</dd>
+                                </div>
+                            ))}
+                        </dl>
+                    </section>
+
+                    {/* 検索結果に質問と回答が拾われるよう、FAQ を構造化データでも出す */}
+                    <script
+                        type="application/ld+json"
+                        dangerouslySetInnerHTML={{
+                            __html: JSON.stringify({
+                                "@context": "https://schema.org",
+                                "@type": "FAQPage",
+                                mainEntity: guide.faq.map((item: any) => ({
+                                    "@type": "Question",
+                                    name: item.q,
+                                    acceptedAnswer: { "@type": "Answer", text: item.a },
+                                })),
+                            }),
+                        }}
+                    />
+                </>
+            )}
+
+            <p className="disclaimer">
+                このページは各サービスの比較情報をまとめたものです。補助金の要件や金額、募集期間は自治体と年度によって変わります。申し込みの前に、お住まいの自治体の公式情報を必ずご確認ください。
+            </p>
 
             {citiesInSamePref.length > 0 && (
                 <section className="nearby-cities">

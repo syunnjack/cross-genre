@@ -328,6 +328,68 @@ button {
     font-size: 13px;
 }
 
+/* 解説セクション（流れ・比較の見どころ・よくある質問） */
+.guide-steps,
+.guide-checks,
+.guide-faq {
+    margin-top: 28px;
+    padding-top: 20px;
+    border-top: 1px solid #e5e5e5;
+    line-height: 1.85;
+    color: #262626;
+}
+.guide-steps h2,
+.guide-checks h2,
+.guide-faq h2 {
+    font-size: 17px;
+    margin: 0 0 16px;
+}
+.guide-steps h3,
+.guide-checks h3 {
+    font-size: 15px;
+    margin: 0 0 4px;
+}
+.guide-steps ol {
+    margin: 0;
+    padding-left: 1.4em;
+}
+.guide-steps li {
+    margin-bottom: 16px;
+}
+.guide-checks ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.guide-checks li {
+    margin-bottom: 16px;
+    padding-left: 14px;
+    border-left: 3px solid #e5e5e5;
+}
+.guide-steps p,
+.guide-checks p {
+    margin: 0;
+    font-size: 14px;
+    color: #404040;
+}
+.guide-faq dt {
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+.guide-faq dd {
+    margin: 0 0 16px;
+    font-size: 14px;
+    color: #404040;
+}
+.disclaimer {
+    margin-top: 28px;
+    padding-top: 16px;
+    border-top: 1px solid #e5e5e5;
+    font-size: 12px;
+    line-height: 1.8;
+    color: #737373;
+}
+
 @media (max-width: 600px) {
     .genre-grid {
         grid-template-columns: 1fr;
