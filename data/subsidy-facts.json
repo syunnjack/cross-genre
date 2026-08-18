@@ -1,173 +1,447 @@
 {
-    "asOf": "2026年8月時点の調査（令和8年度）",
-    "cities": {
-        "osaka": {
-            "battery": {
-                "status": "found",
-                "programName": "令和8年度省エネ・省CO₂加速化支援事業費補助金（家庭用蓄電システム）",
-                "summary": "個人住宅が対象。蓄電システム1kWhあたり3万円、上限30万円。国の補助事業との併用が前提です。",
-                "period": "受付開始：令和8年8月10日14時〜（募集終了時期は未確定）",
-                "sourceUrl": "https://www.city.osaka.lg.jp/hodoshiryo/kankyo/0000684090.html",
-                "sourceLabel": "大阪市 公式サイト"
-            },
-            "solar": {
-                "status": "not_found",
-                "summary": "家庭用（個人）向け太陽光発電単体の補助制度は確認できませんでした。市の「新たな手法による太陽光発電導入補助金」はソーラーカーポート等が対象で、交付決定を受けた事業者向けの制度です。",
-                "sourceUrl": "https://www.city.osaka.lg.jp/kankyo/page/0000678400.html",
-                "sourceLabel": "大阪市 公式サイト"
-            }
-        },
-        "yokohama": {
-            "battery": {
-                "status": "found",
-                "programName": "令和8年度横浜グリーンエネルギーパートナーシップ事業（YGrEP）",
-                "summary": "横浜市民の個人住宅が対象。蓄電池導入でキャッシュレスポイント等12万円分/件を還元します。太陽光との組み合わせが条件になる設備が多い点に注意してください。",
-                "period": "参加・導入支援申請期間：2026年6月15日〜12月25日（予算上限到達次第終了）",
-                "sourceUrl": "https://ygrep2026.city.yokohama.lg.jp/",
-                "sourceLabel": "横浜市 YGrEP公式サイト"
-            },
-            "solar": {
-                "status": "found",
-                "programName": "令和8年度横浜グリーンエネルギーパートナーシップ事業（YGrEP）",
-                "summary": "太陽光発電は15,000円分/kW（上限4kW＝6万円分）をキャッシュレスポイント等で還元します。",
-                "period": "参加・導入支援申請期間：2026年6月15日〜12月25日（予算上限到達次第終了）",
-                "sourceUrl": "https://ygrep2026.city.yokohama.lg.jp/",
-                "sourceLabel": "横浜市 YGrEP公式サイト"
-            }
-        },
-        "nagoya": {
-            "battery": {
-                "status": "closed",
-                "programName": "令和8年度 住宅等の脱炭素化促進補助（蓄電システム）",
-                "summary": "個人（市内居住）・法人が対象。蓄電容量1kWhあたり1.5万円、上限10kWh（最大15万円）。",
-                "period": "募集期間：令和8年7月1日〜令和9年2月12日の予定でしたが、蓄電システムは令和8年7月31日17時時点で予算上限に達し受付終了しています。次年度以降の再開はご自身で公式サイトをご確認ください。",
-                "sourceUrl": "https://www.city.nagoya.jp/kurashi/kankyou/1012424/1012443/1012445.html",
-                "sourceLabel": "名古屋市 公式サイト"
-            },
-            "solar": {
-                "status": "found",
-                "programName": "令和8年度 住宅等の脱炭素化促進補助（太陽光発電設備）",
-                "summary": "築10年以内は2万円/kW、築10年超は3万円/kW（上限9.99kW）。単体申請は不可で、HEMSや蓄電池等との一体導入が必須の事後申請方式です。",
-                "period": "募集期間：令和8年7月1日〜令和9年2月12日（太陽光は受付継続中、最新の受付状況は公式サイトでご確認ください）",
-                "sourceUrl": "https://www.city.nagoya.jp/kurashi/kankyou/1012424/1012443/1012445.html",
-                "sourceLabel": "名古屋市 公式サイト"
-            }
-        },
-        "fukuoka": {
-            "battery": {
-                "status": "found",
-                "programName": "令和8年度福岡市住宅用エネルギーシステム導入支援事業（リチウムイオン蓄電システム）",
-                "summary": "戸建て・集合住宅所有者の個人が対象。機器費の1/2を補助し、上限は容量により15万円（9kWh未満）／30万円（9〜14kWh未満）／45万円（14kWh以上）。",
-                "period": "申請期間：令和8年5月7日〜令和9年1月29日。7月時点で申請多数のため交付決定まで6〜7週間程度かかっています。",
-                "sourceUrl": "https://www.city.fukuoka.lg.jp/kankyo/j-suishin/hp/energy-system_reiwa.html",
-                "sourceLabel": "福岡市 公式サイト"
-            },
-            "solar": {
-                "status": "found",
-                "programName": "令和8年度福岡市住宅用エネルギーシステム導入支援事業（太陽光発電）",
-                "summary": "2万円/kW、上限10万円。単体では申請できず、蓄電池等とのセット導入が条件です。",
-                "period": "申請期間：令和8年5月7日〜令和9年1月29日",
-                "sourceUrl": "https://www.city.fukuoka.lg.jp/kankyo/j-suishin/hp/energy-system_reiwa.html",
-                "sourceLabel": "福岡市 公式サイト"
-            }
-        },
-        "sapporo": {
-            "battery": {
-                "status": "found",
-                "programName": "再エネ省エネ機器導入補助金制度（定置用蓄電池）",
-                "summary": "札幌市民または市内居住予定者の個人住宅が対象。蓄電池容量1kWhあたり1.6万円、上限6.4万円。",
-                "period": "第1回募集（2026年5月7日〜7月8日）は終了済み。第2回募集は2026年9月1日〜11月4日を予定。",
-                "sourceUrl": "https://www.city.sapporo.jp/kankyo/energy/hojo/kiki.html",
-                "sourceLabel": "札幌市 公式サイト"
-            },
-            "solar": {
-                "status": "found",
-                "programName": "再エネ省エネ機器導入補助金制度（太陽光発電）",
-                "summary": "太陽光モジュール出力1kWあたり2万円、上限13.9万円。",
-                "period": "第2回募集は2026年9月1日〜11月4日を予定。",
-                "sourceUrl": "https://www.city.sapporo.jp/kankyo/energy/hojo/kiki.html",
-                "sourceLabel": "札幌市 公式サイト"
-            }
-        },
-        "kobe": {
-            "battery": {
-                "status": "not_found",
-                "summary": "神戸市の公式FAQで「補助は行っていません」と明記されています。代替として、市民同士でまとめて発注しコストを抑える「太陽光パネル・蓄電池の共同購入（グループパワーチョイス）」制度が案内されています。",
-                "sourceUrl": "https://faq.city.kobe.lg.jp/faq/show/1790",
-                "sourceLabel": "神戸市 公式FAQ"
-            },
-            "solar": {
-                "status": "not_found",
-                "summary": "神戸市の公式ページで「太陽光パネルや蓄電池に関する補助金制度は実施しておりません」と明記されています。共同購入支援のみ案内されています。",
-                "sourceUrl": "https://www.city.kobe.lg.jp/a73498/ondanka/3c1.html",
-                "sourceLabel": "神戸市 公式サイト"
-            }
-        },
-        "kyoto": {
-            "battery": {
-                "status": "found",
-                "programName": "令和8年度京都市住宅の自家消費型太陽光発電設備等設置補助金（蓄電池）",
-                "summary": "京都市内の戸建て住宅所有者が対象。太陽光発電の同時設置が前提。5万円/kWh、上限は補助対象経費の1/3。",
-                "period": "受付期間：令和8年6月1日〜令和9年1月29日（予算到達次第終了）",
-                "sourceUrl": "https://www.city.kyoto.lg.jp/kankyo/page/0000353430.html",
-                "sourceLabel": "京都市 公式サイト"
-            },
-            "solar": {
-                "status": "found",
-                "programName": "令和8年度京都市住宅の自家消費型太陽光発電設備等設置補助金（太陽光発電）",
-                "summary": "7万円/kW（2kW以上が対象）。FIT/FIP非認定で、発電量の30%以上を自家消費することが条件です。",
-                "period": "受付期間：令和8年6月1日〜令和9年1月29日（予算到達次第終了）",
-                "sourceUrl": "https://www.city.kyoto.lg.jp/kankyo/page/0000353430.html",
-                "sourceLabel": "京都市 公式サイト"
-            }
-        },
-        "saitama": {
-            "battery": {
-                "status": "not_found",
-                "summary": "「さいたま市創エネ・蓄エネ設備導入補助金」は市の公式ページで「事業者向けの補助金です」と明記されており、個人住宅は対象外です。",
-                "sourceUrl": "https://www.city.saitama.lg.jp/001/009/015/011/002/p097431.html",
-                "sourceLabel": "さいたま市 公式サイト"
-            },
-            "solar": {
-                "status": "not_found",
-                "summary": "さいたま市の公式ページに「太陽光発電設備単体での補助金は実施していません」と明記されています。代わりに共同購入事業「みんなのおうちに太陽光」が案内されています。",
-                "sourceUrl": "https://www.city.saitama.lg.jp/001/009/015/010/0001/p067866.html",
-                "sourceLabel": "さいたま市 公式サイト"
-            }
-        },
-        "kawasaki": {
-            "battery": {
-                "status": "found",
-                "programName": "川崎市太陽光発電設備等設置費補助金（蓄電池）",
-                "summary": "市内居住・居住予定の個人住宅が対象。FIT非適用の太陽光と新規連系で設置する場合は10万円/kWh、上限70万円/件（FIT適用等の場合は上限30万円）。",
-                "period": "申請期間：令和8年4月24日〜12月28日（8月時点で予算執行率約30%）",
-                "sourceUrl": "https://www.city.kawasaki.jp/300/page/0000185300.html",
-                "sourceLabel": "川崎市 公式サイト"
-            },
-            "solar": {
-                "status": "found",
-                "programName": "川崎市太陽光発電設備等設置費補助金（太陽光発電）",
-                "summary": "FIT非適用は7万円/kW、上限28万円/件（2kW以上50kW未満）。FIT適用の場合は定額4万円/件。",
-                "period": "申請期間：令和8年4月24日〜12月28日（8月時点で予算執行率約30%）",
-                "sourceUrl": "https://www.city.kawasaki.jp/300/page/0000185300.html",
-                "sourceLabel": "川崎市 公式サイト"
-            }
-        },
-        "hiroshima": {
-            "battery": {
-                "status": "found",
-                "programName": "広島市家庭用スマートエネルギー設備等設置補助金（家庭用蓄電池）",
-                "summary": "住宅を所有し自ら居住または賃貸する個人が対象。定額3万円/台。機器費と工事費の合計20万円以上、ZEH支援事業に登録された未使用品であることが条件です。",
-                "period": "申請期間：令和8年4月15日〜令和9年1月29日（7月末時点で家庭用燃料電池・V2H含む合計490台枠のうち161台）",
-                "sourceUrl": "https://www.city.hiroshima.lg.jp/living/gomi-kankyo/1021289/1049641/1049643.html",
-                "sourceLabel": "広島市 公式サイト"
-            },
-            "solar": {
-                "status": "not_found",
-                "summary": "「広島市家庭用スマートエネルギー設備等設置補助金」の対象機器は家庭用燃料電池・家庭用蓄電池・V2H充放電設備・断熱窓のみで、太陽光発電設備本体は対象に含まれていません。",
-                "sourceUrl": "https://www.city.hiroshima.lg.jp/living/gomi-kankyo/1021289/index.html",
-                "sourceLabel": "広島市 公式サイト"
-            }
-        }
+  "asOf": "2026年8月時点の調査（令和8年度）",
+  "cities": {
+    "osaka": {
+      "battery": {
+        "status": "found",
+        "programName": "令和8年度省エネ・省CO₂加速化支援事業費補助金（家庭用蓄電システム）",
+        "summary": "個人住宅が対象。蓄電システム1kWhあたり3万円、上限30万円。国の補助事業との併用が前提です。",
+        "period": "受付開始：令和8年8月10日14時〜（募集終了時期は未確定）",
+        "sourceUrl": "https://www.city.osaka.lg.jp/hodoshiryo/kankyo/0000684090.html",
+        "sourceLabel": "大阪市 公式サイト"
+      },
+      "solar": {
+        "status": "not_found",
+        "summary": "家庭用（個人）向け太陽光発電単体の補助制度は確認できませんでした。市の「新たな手法による太陽光発電導入補助金」はソーラーカーポート等が対象で、交付決定を受けた事業者向けの制度です。",
+        "sourceUrl": "https://www.city.osaka.lg.jp/kankyo/page/0000678400.html",
+        "sourceLabel": "大阪市 公式サイト"
+      }
+    },
+    "yokohama": {
+      "battery": {
+        "status": "found",
+        "programName": "令和8年度横浜グリーンエネルギーパートナーシップ事業（YGrEP）",
+        "summary": "横浜市民の個人住宅が対象。蓄電池導入でキャッシュレスポイント等12万円分/件を還元します。太陽光との組み合わせが条件になる設備が多い点に注意してください。",
+        "period": "参加・導入支援申請期間：2026年6月15日〜12月25日（予算上限到達次第終了）",
+        "sourceUrl": "https://ygrep2026.city.yokohama.lg.jp/",
+        "sourceLabel": "横浜市 YGrEP公式サイト"
+      },
+      "solar": {
+        "status": "found",
+        "programName": "令和8年度横浜グリーンエネルギーパートナーシップ事業（YGrEP）",
+        "summary": "太陽光発電は15,000円分/kW（上限4kW＝6万円分）をキャッシュレスポイント等で還元します。",
+        "period": "参加・導入支援申請期間：2026年6月15日〜12月25日（予算上限到達次第終了）",
+        "sourceUrl": "https://ygrep2026.city.yokohama.lg.jp/",
+        "sourceLabel": "横浜市 YGrEP公式サイト"
+      }
+    },
+    "nagoya": {
+      "battery": {
+        "status": "closed",
+        "programName": "令和8年度 住宅等の脱炭素化促進補助（蓄電システム）",
+        "summary": "個人（市内居住）・法人が対象。蓄電容量1kWhあたり1.5万円、上限10kWh（最大15万円）。",
+        "period": "募集期間：令和8年7月1日〜令和9年2月12日の予定でしたが、蓄電システムは令和8年7月31日17時時点で予算上限に達し受付終了しています。次年度以降の再開はご自身で公式サイトをご確認ください。",
+        "sourceUrl": "https://www.city.nagoya.jp/kurashi/kankyou/1012424/1012443/1012445.html",
+        "sourceLabel": "名古屋市 公式サイト"
+      },
+      "solar": {
+        "status": "found",
+        "programName": "令和8年度 住宅等の脱炭素化促進補助（太陽光発電設備）",
+        "summary": "築10年以内は2万円/kW、築10年超は3万円/kW（上限9.99kW）。単体申請は不可で、HEMSや蓄電池等との一体導入が必須の事後申請方式です。",
+        "period": "募集期間：令和8年7月1日〜令和9年2月12日（太陽光は受付継続中、最新の受付状況は公式サイトでご確認ください）",
+        "sourceUrl": "https://www.city.nagoya.jp/kurashi/kankyou/1012424/1012443/1012445.html",
+        "sourceLabel": "名古屋市 公式サイト"
+      }
+    },
+    "fukuoka": {
+      "battery": {
+        "status": "found",
+        "programName": "令和8年度福岡市住宅用エネルギーシステム導入支援事業（リチウムイオン蓄電システム）",
+        "summary": "戸建て・集合住宅所有者の個人が対象。機器費の1/2を補助し、上限は容量により15万円（9kWh未満）／30万円（9〜14kWh未満）／45万円（14kWh以上）。",
+        "period": "申請期間：令和8年5月7日〜令和9年1月29日。7月時点で申請多数のため交付決定まで6〜7週間程度かかっています。",
+        "sourceUrl": "https://www.city.fukuoka.lg.jp/kankyo/j-suishin/hp/energy-system_reiwa.html",
+        "sourceLabel": "福岡市 公式サイト"
+      },
+      "solar": {
+        "status": "found",
+        "programName": "令和8年度福岡市住宅用エネルギーシステム導入支援事業（太陽光発電）",
+        "summary": "2万円/kW、上限10万円。単体では申請できず、蓄電池等とのセット導入が条件です。",
+        "period": "申請期間：令和8年5月7日〜令和9年1月29日",
+        "sourceUrl": "https://www.city.fukuoka.lg.jp/kankyo/j-suishin/hp/energy-system_reiwa.html",
+        "sourceLabel": "福岡市 公式サイト"
+      }
+    },
+    "sapporo": {
+      "battery": {
+        "status": "found",
+        "programName": "再エネ省エネ機器導入補助金制度（定置用蓄電池）",
+        "summary": "札幌市民または市内居住予定者の個人住宅が対象。蓄電池容量1kWhあたり1.6万円、上限6.4万円。",
+        "period": "第1回募集（2026年5月7日〜7月8日）は終了済み。第2回募集は2026年9月1日〜11月4日を予定。",
+        "sourceUrl": "https://www.city.sapporo.jp/kankyo/energy/hojo/kiki.html",
+        "sourceLabel": "札幌市 公式サイト"
+      },
+      "solar": {
+        "status": "found",
+        "programName": "再エネ省エネ機器導入補助金制度（太陽光発電）",
+        "summary": "太陽光モジュール出力1kWあたり2万円、上限13.9万円。",
+        "period": "第2回募集は2026年9月1日〜11月4日を予定。",
+        "sourceUrl": "https://www.city.sapporo.jp/kankyo/energy/hojo/kiki.html",
+        "sourceLabel": "札幌市 公式サイト"
+      }
+    },
+    "kobe": {
+      "battery": {
+        "status": "not_found",
+        "summary": "神戸市の公式FAQで「補助は行っていません」と明記されています。代替として、市民同士でまとめて発注しコストを抑える「太陽光パネル・蓄電池の共同購入（グループパワーチョイス）」制度が案内されています。",
+        "sourceUrl": "https://faq.city.kobe.lg.jp/faq/show/1790",
+        "sourceLabel": "神戸市 公式FAQ"
+      },
+      "solar": {
+        "status": "not_found",
+        "summary": "神戸市の公式ページで「太陽光パネルや蓄電池に関する補助金制度は実施しておりません」と明記されています。共同購入支援のみ案内されています。",
+        "sourceUrl": "https://www.city.kobe.lg.jp/a73498/ondanka/3c1.html",
+        "sourceLabel": "神戸市 公式サイト"
+      }
+    },
+    "kyoto": {
+      "battery": {
+        "status": "found",
+        "programName": "令和8年度京都市住宅の自家消費型太陽光発電設備等設置補助金（蓄電池）",
+        "summary": "京都市内の戸建て住宅所有者が対象。太陽光発電の同時設置が前提。5万円/kWh、上限は補助対象経費の1/3。",
+        "period": "受付期間：令和8年6月1日〜令和9年1月29日（予算到達次第終了）",
+        "sourceUrl": "https://www.city.kyoto.lg.jp/kankyo/page/0000353430.html",
+        "sourceLabel": "京都市 公式サイト"
+      },
+      "solar": {
+        "status": "found",
+        "programName": "令和8年度京都市住宅の自家消費型太陽光発電設備等設置補助金（太陽光発電）",
+        "summary": "7万円/kW（2kW以上が対象）。FIT/FIP非認定で、発電量の30%以上を自家消費することが条件です。",
+        "period": "受付期間：令和8年6月1日〜令和9年1月29日（予算到達次第終了）",
+        "sourceUrl": "https://www.city.kyoto.lg.jp/kankyo/page/0000353430.html",
+        "sourceLabel": "京都市 公式サイト"
+      }
+    },
+    "saitama": {
+      "battery": {
+        "status": "not_found",
+        "summary": "「さいたま市創エネ・蓄エネ設備導入補助金」は市の公式ページで「事業者向けの補助金です」と明記されており、個人住宅は対象外です。",
+        "sourceUrl": "https://www.city.saitama.lg.jp/001/009/015/011/002/p097431.html",
+        "sourceLabel": "さいたま市 公式サイト"
+      },
+      "solar": {
+        "status": "not_found",
+        "summary": "さいたま市の公式ページに「太陽光発電設備単体での補助金は実施していません」と明記されています。代わりに共同購入事業「みんなのおうちに太陽光」が案内されています。",
+        "sourceUrl": "https://www.city.saitama.lg.jp/001/009/015/010/0001/p067866.html",
+        "sourceLabel": "さいたま市 公式サイト"
+      }
+    },
+    "kawasaki": {
+      "battery": {
+        "status": "found",
+        "programName": "川崎市太陽光発電設備等設置費補助金（蓄電池）",
+        "summary": "市内居住・居住予定の個人住宅が対象。FIT非適用の太陽光と新規連系で設置する場合は10万円/kWh、上限70万円/件（FIT適用等の場合は上限30万円）。",
+        "period": "申請期間：令和8年4月24日〜12月28日（8月時点で予算執行率約30%）",
+        "sourceUrl": "https://www.city.kawasaki.jp/300/page/0000185300.html",
+        "sourceLabel": "川崎市 公式サイト"
+      },
+      "solar": {
+        "status": "found",
+        "programName": "川崎市太陽光発電設備等設置費補助金（太陽光発電）",
+        "summary": "FIT非適用は7万円/kW、上限28万円/件（2kW以上50kW未満）。FIT適用の場合は定額4万円/件。",
+        "period": "申請期間：令和8年4月24日〜12月28日（8月時点で予算執行率約30%）",
+        "sourceUrl": "https://www.city.kawasaki.jp/300/page/0000185300.html",
+        "sourceLabel": "川崎市 公式サイト"
+      }
+    },
+    "hiroshima": {
+      "battery": {
+        "status": "found",
+        "programName": "広島市家庭用スマートエネルギー設備等設置補助金（家庭用蓄電池）",
+        "summary": "住宅を所有し自ら居住または賃貸する個人が対象。定額3万円/台。機器費と工事費の合計20万円以上、ZEH支援事業に登録された未使用品であることが条件です。",
+        "period": "申請期間：令和8年4月15日〜令和9年1月29日（7月末時点で家庭用燃料電池・V2H含む合計490台枠のうち161台）",
+        "sourceUrl": "https://www.city.hiroshima.lg.jp/living/gomi-kankyo/1021289/1049641/1049643.html",
+        "sourceLabel": "広島市 公式サイト"
+      },
+      "solar": {
+        "status": "not_found",
+        "summary": "「広島市家庭用スマートエネルギー設備等設置補助金」の対象機器は家庭用燃料電池・家庭用蓄電池・V2H充放電設備・断熱窓のみで、太陽光発電設備本体は対象に含まれていません。",
+        "sourceUrl": "https://www.city.hiroshima.lg.jp/living/gomi-kankyo/1021289/index.html",
+        "sourceLabel": "広島市 公式サイト"
+      }
+    },
+    "sendai": {
+      "battery": {
+        "status": "found",
+        "programName": "太陽光発電等導入補助金（既存戸建住宅向け）",
+        "summary": "太陽光発電設備と蓄電池を同時に導入することが条件で、定額30万円。令和8年4月1日以降の契約かつ着工前であることが必要。",
+        "period": "令和8年5月1日〜12月15日（必着）。予算がなくなり次第終了。2026年7月28日時点の申請額は予算の26%。",
+        "sourceUrl": "https://www.city.sendai.jp/ondanka/kodannetsu/kizonkodate.html",
+        "sourceLabel": "仙台市 公式サイト"
+      },
+      "solar": {
+        "status": "found",
+        "programName": "太陽光発電等導入補助金（既存戸建住宅向け）",
+        "summary": "太陽光発電設備（1kW以上）と蓄電池の同時導入が条件で、定額30万円。新築戸建向けにはZEH水準の住宅を対象とした別枠がある。",
+        "period": "令和8年5月1日〜12月15日（必着）。予算がなくなり次第終了。2026年7月28日時点の申請額は予算の26%。",
+        "sourceUrl": "https://www.city.sendai.jp/ondanka/kodannetsu/kizonkodate.html",
+        "sourceLabel": "仙台市 公式サイト"
+      }
+    },
+    "chiba": {
+      "battery": {
+        "status": "found",
+        "programName": "住宅用設備等脱炭素化促進事業補助金（住宅向け）",
+        "summary": "市内の住宅に設備を導入した市民（法人を除く）が対象。定置用リチウムイオン蓄電システムは7万円。",
+        "period": "令和8年5月1日〜令和9年1月29日（必着）。2026年7月24日時点で予算枠約460件に対し約390件が残っている。",
+        "sourceUrl": "https://www.city.chiba.jp/kankyo/kankyohozen/datsutanso/renewable-energy-hojo.html",
+        "sourceLabel": "千葉市 公式サイト"
+      },
+      "solar": {
+        "status": "found",
+        "programName": "住宅用設備等脱炭素化促進事業補助金（住宅向け）",
+        "summary": "太陽光発電システムは出力1kWあたり1万円で最大4.5万円。ZEH＋やエネファームも同じ制度の対象。",
+        "period": "令和8年5月1日〜令和9年1月29日（必着）。2026年7月24日時点で予算枠約460件に対し約390件が残っている。",
+        "sourceUrl": "https://www.city.chiba.jp/kankyo/kankyohozen/datsutanso/renewable-energy-hojo.html",
+        "sourceLabel": "千葉市 公式サイト"
+      }
+    },
+    "sagamihara": {
+      "battery": {
+        "status": "found",
+        "programName": "住宅用スマートエネルギー設備等導入奨励金",
+        "summary": "定置用リチウムイオン蓄電池は20万円。初期費用ゼロで設置する「ゼロ円ソーラー」向けには別の補助金がある。",
+        "period": "第1期は令和8年9月1日〜9月30日、第2期は令和9年2月1日〜2月26日（いずれも必着）。期間外は申請できない。",
+        "sourceUrl": "https://www.city.sagamihara.kanagawa.jp/kurashi/1026489/kankyo/hojyo/1008083.html",
+        "sourceLabel": "相模原市 公式サイト"
+      },
+      "solar": {
+        "status": "found",
+        "programName": "住宅用スマートエネルギー設備等導入奨励金",
+        "summary": "太陽光単体補助コースは8万円。初期費用ゼロで設置する「ゼロ円ソーラー」向けには別の補助金がある。",
+        "period": "第1期は令和8年9月1日〜9月30日、第2期は令和9年2月1日〜2月26日（いずれも必着）。期間外は申請できない。",
+        "sourceUrl": "https://www.city.sagamihara.kanagawa.jp/kurashi/1026489/kankyo/hojyo/1008083.html",
+        "sourceLabel": "相模原市 公式サイト"
+      }
+    },
+    "niigata": {
+      "battery": {
+        "status": "found",
+        "programName": "住宅用再生可能エネルギー等導入促進事業補助金（令和8年度）",
+        "summary": "定置用蓄電池は1kWhあたり1万円、上限10万円。市内に本社などがある法人に工事を発注することが条件。",
+        "period": "令和8年4月16日受付開始。2026年7月31日時点の執行率は蓄電池68%。予算上限に達した日の申請は抽選になる。",
+        "sourceUrl": "https://www.city.niigata.lg.jp/kurashi/kankyo/datutanso/shien/saiene2026.html",
+        "sourceLabel": "新潟市 公式サイト"
+      },
+      "solar": {
+        "status": "found",
+        "programName": "住宅用再生可能エネルギー等導入促進事業補助金（令和8年度）",
+        "summary": "太陽光発電設備は1kWあたり2万円、上限10万円。市内に本社などがある法人に工事を発注することが条件。",
+        "period": "令和8年4月16日受付開始。2026年7月31日時点の執行率は太陽光57%。予算上限に達した日の申請は抽選になる。",
+        "sourceUrl": "https://www.city.niigata.lg.jp/kurashi/kankyo/datutanso/shien/saiene2026.html",
+        "sourceLabel": "新潟市 公式サイト"
+      }
+    },
+    "shizuoka": {
+      "battery": {
+        "status": "not_found",
+        "summary": "個人住宅向けに蓄電池の設置費用を補助する市の制度は確認できませんでした。市は県内一括発注で安く買える共同購入事業や、静岡市版ZEHの助成を実施しています。",
+        "sourceUrl": "https://www.city.shizuoka.lg.jp/p009750.html",
+        "sourceLabel": "静岡市 公式サイト（支援制度・補助金一覧）"
+      },
+      "solar": {
+        "status": "not_found",
+        "summary": "個人住宅向けに太陽光発電設備そのものを補助する市の制度は確認できませんでした。市の「グリーン電力地産地消設備整備事業補助金」はPPA事業者が対象です。共同購入事業と静岡市版ZEHの助成があります。",
+        "sourceUrl": "https://www.city.shizuoka.lg.jp/p009750.html",
+        "sourceLabel": "静岡市 公式サイト（支援制度・補助金一覧）"
+      }
+    },
+    "hamamatsu": {
+      "battery": {
+        "status": "found",
+        "programName": "令和8年度浜松市スマートハウス・次世代自動車補助金",
+        "summary": "定置用蓄電池は8万円。令和8年度からは「ZEH」かつ「断熱等性能等級6以上」の住宅のみが対象になりました。",
+        "period": "令和8年5月1日〜令和9年3月15日。工事完了または支払い完了が令和8年3月16日〜令和9年3月15日であることが条件。",
+        "sourceUrl": "https://www.city.hamamatsu.shizuoka.jp/shin-ene/smart_hojyo/hojokin.html",
+        "sourceLabel": "浜松市 公式サイト"
+      },
+      "solar": {
+        "status": "found",
+        "programName": "令和8年度浜松市スマートハウス・次世代自動車補助金",
+        "summary": "太陽光発電システムは2万円。令和8年度からは「ZEH」かつ「断熱等性能等級6以上」の住宅のみが対象で、はままつ太陽光発電クラブへの入会も条件です。",
+        "period": "令和8年5月1日〜令和9年3月15日。工事完了または支払い完了が令和8年3月16日〜令和9年3月15日であることが条件。",
+        "sourceUrl": "https://www.city.hamamatsu.shizuoka.jp/shin-ene/smart_hojyo/hojokin.html",
+        "sourceLabel": "浜松市 公式サイト"
+      }
+    },
+    "sakai": {
+      "battery": {
+        "status": "not_found",
+        "summary": "堺市スマートハウス化支援事業の補助対象は太陽光発電システムと、それと組み合わせるエコキュートなどで、定置用蓄電池は対象として記載されていません。",
+        "sourceUrl": "https://www.city.sakai.lg.jp/kurashi/gomi/ondanka/smarthouse/sumarthouse/index.html",
+        "sourceLabel": "堺市 公式サイト"
+      },
+      "solar": {
+        "status": "found",
+        "programName": "堺市スマートハウス化支援事業補助金",
+        "summary": "戸建て住宅に太陽光発電システムを導入した場合は4万円。太陽光と組み合わせるエコキュートも対象に加わりました。申請には市民税の納税証明書が必要です。",
+        "period": "令和8年6月25日〜令和9年2月15日（必着）。2026年8月1日時点の予算残額は2,206万円。",
+        "sourceUrl": "https://www.city.sakai.lg.jp/kurashi/gomi/ondanka/smarthouse/sumarthouse/index.html",
+        "sourceLabel": "堺市 公式サイト"
+      }
+    },
+    "tokyo23": {
+      "battery": {
+        "status": "found",
+        "programName": "家庭における蓄電池導入促進事業（東京都）",
+        "summary": "東京都の助成。蓄電池パッケージは蓄電容量1kWhあたり10万円、上限120万円（DR実証に参加しない場合）。増設ユニットは1kWhあたり6万円、上限72万円。区によっては独自の上乗せ制度があります。",
+        "period": "事前申込は令和8年5月29日開始、交付申請兼実績報告は令和8年6月30日開始で受付中。予算上限に達し次第終了。",
+        "sourceUrl": "https://www.tokyo-co2down.jp/subsidy/family_tikudenchi/r8/",
+        "sourceLabel": "クール・ネット東京（東京都地球温暖化防止活動推進センター）"
+      },
+      "solar": {
+        "status": "found",
+        "programName": "家庭における太陽光発電導入促進事業（東京都）",
+        "summary": "東京都の助成。既存住宅は3.75kW以下なら1kWあたり15万円（上限45万円）、超える場合は1kWあたり12万円。新築住宅は3.6kW以下で1kWあたり12万円（上限36万円）。区独自の上乗せ制度がある場合もあります。",
+        "period": "事前申込は令和8年5月29日開始。交付申請兼実績報告は令和8年6月30日〜令和11年3月30日で受付中。",
+        "sourceUrl": "https://www.tokyo-co2down.jp/subsidy/fam_solar/r8/",
+        "sourceLabel": "クール・ネット東京（東京都地球温暖化防止活動推進センター）"
+      }
+    },
+    "toyohashi": {
+      "battery": {
+        "status": "found",
+        "programName": "豊橋市家庭用エネルギー設備導入補助金",
+        "summary": "リチウムイオン蓄電池は1kWhあたり1万円、上限7万円。太陽光・HEMS・蓄電池を一体で導入する場合は別枠で1件12万円。",
+        "period": "工事完了後の書類提出期限は令和9年3月15日。予算の範囲内での交付。",
+        "sourceUrl": "https://www.city.toyohashi.lg.jp/49738.htm",
+        "sourceLabel": "豊橋市 公式サイト"
+      },
+      "solar": {
+        "status": "found",
+        "programName": "豊橋市家庭用エネルギー設備導入補助金",
+        "summary": "太陽光発電設備は「太陽光・HEMS・蓄電池の一体的導入」として1件12万円。太陽光単体での補助は用意されていません。",
+        "period": "工事完了後の書類提出期限は令和9年3月15日。予算の範囲内での交付。",
+        "sourceUrl": "https://www.city.toyohashi.lg.jp/49738.htm",
+        "sourceLabel": "豊橋市 公式サイト"
+      }
+    },
+    "okazaki": {
+      "battery": {
+        "status": "found",
+        "programName": "岡崎市地球温暖化対策設備設置費補助金",
+        "summary": "住宅用定置用リチウムイオン蓄電池はメニューが3つあり、重点対策加速化事業活用型は対象経費の3分の1で上限35万円、岡崎産再エネ電気活用型は5分の1で上限15万円、その他は5分の1で上限2万円。",
+        "period": "令和8年12月28日まで。設備ごとに受付開始日が異なります。",
+        "sourceUrl": "https://www.city.okazaki.lg.jp/kurashi/gomi/1002338/1002481/1010682.html",
+        "sourceLabel": "岡崎市 公式サイト"
+      },
+      "solar": {
+        "status": "found",
+        "programName": "岡崎市地球温暖化対策設備設置費補助金",
+        "summary": "住宅用太陽光発電システムは対象経費の2分の1、または公称最大出力1kWあたり7万円のいずれか低い方で、上限63万円。",
+        "period": "令和8年12月28日まで。設備ごとに受付開始日が異なります。",
+        "sourceUrl": "https://www.city.okazaki.lg.jp/kurashi/gomi/1002338/1002481/1010682.html",
+        "sourceLabel": "岡崎市 公式サイト"
+      }
+    },
+    "ichinomiya": {
+      "battery": {
+        "status": "found",
+        "programName": "住宅用地球温暖化対策設備設置補助金",
+        "summary": "定置用リチウムイオン蓄電システムは定額5万円で、既存住宅のみ対象。蓄電池は単体でも申請できます。",
+        "period": "2026年4月1日以降の設置完了が条件。予算の範囲内で先着順のため、残額は市への電話確認が必要です。",
+        "sourceUrl": "https://www.city.ichinomiya.aichi.jp/kankyou/kankyouseisaku/1043982/1043983/1043984/1074943.html",
+        "sourceLabel": "一宮市 公式サイト"
+      },
+      "solar": {
+        "status": "found",
+        "programName": "住宅用地球温暖化対策設備設置補助金",
+        "summary": "太陽光発電システムは単体では申請できません。既存住宅は「太陽光＋蓄電池＋HEMS」で12万円、「太陽光＋V2H＋HEMS」で11万円。新築はZEHで16万円、GX ZEH水準で30万円。",
+        "period": "2026年4月1日以降の設置完了が条件。予算の範囲内で先着順のため、残額は市への電話確認が必要です。",
+        "sourceUrl": "https://www.city.ichinomiya.aichi.jp/kankyou/kankyouseisaku/1043982/1043983/1043984/1074943.html",
+        "sourceLabel": "一宮市 公式サイト"
+      }
+    },
+    "okayama": {
+      "battery": {
+        "status": "found",
+        "programName": "岡山市住宅用スマートエネルギー導入促進補助事業（令和8年度）",
+        "summary": "蓄電池は1kWhあたり1.5万円、上限20万円。太陽光と同時に導入するか、すでに太陽光がある住宅が対象で、「あっ晴れ岡山エコクラブ」への入会が要件です。",
+        "period": "申請受付は令和8年5月1日〜令和9年3月10日。導入日が令和8年3月1日〜令和9年2月28日であることが条件。",
+        "sourceUrl": "https://www.city.okayama.jp/ondankataisaku/0000042045.html",
+        "sourceLabel": "岡山市 公式サイト"
+      },
+      "solar": {
+        "status": "found",
+        "programName": "岡山市住宅用スマートエネルギー導入促進補助事業（令和8年度）",
+        "summary": "太陽光発電設備は1kWあたり3万円、上限15万円。令和8年度は補助率と上限額が引き上げられました。「あっ晴れ岡山エコクラブ」への入会が要件です。",
+        "period": "申請受付は令和8年5月1日〜令和9年3月10日。導入日が令和8年3月1日〜令和9年2月28日であることが条件。",
+        "sourceUrl": "https://www.city.okayama.jp/ondankataisaku/0000042045.html",
+        "sourceLabel": "岡山市 公式サイト"
+      }
+    },
+    "takamatsu": {
+      "battery": {
+        "status": "closed",
+        "programName": "自家消費型家庭用太陽光発電設備等設置費補助事業（令和8年度）",
+        "summary": "家庭用蓄電池は対象経費の3分の1で上限20万円。既存住宅が対象でしたが、予算上限に達し予約申請の受付は終了しました。本年度の追加募集は予定されていません。",
+        "period": "予約申請は令和8年5月25日開始で受付終了。すでに予約済みの分の交付申請期限は令和9年1月29日。",
+        "sourceUrl": "https://www.city.takamatsu.kagawa.jp/kurashi/kurashi/kankyo/ondanka/scPVR7.html",
+        "sourceLabel": "高松市 公式サイト"
+      },
+      "solar": {
+        "status": "closed",
+        "programName": "自家消費型家庭用太陽光発電設備等設置費補助事業（令和8年度）",
+        "summary": "太陽光発電設備は1kWあたり8万円で上限45万円。FIT・FIP認定を取らず、発電量の30%以上を自家消費することが要件でしたが、予算上限に達し予約申請の受付は終了しました。",
+        "period": "予約申請は令和8年5月25日開始で受付終了。すでに予約済みの分の交付申請期限は令和9年1月29日。",
+        "sourceUrl": "https://www.city.takamatsu.kagawa.jp/kurashi/kurashi/kankyo/ondanka/scPVR7.html",
+        "sourceLabel": "高松市 公式サイト"
+      }
+    },
+    "kitakyushu": {
+      "battery": {
+        "status": "not_found",
+        "summary": "個人住宅向けに蓄電池を補助する市の制度は確認できませんでした。市の補助は中小企業向けが中心です。福岡県が実施する太陽光発電設備・蓄電池の共同購入事業には参加できます。",
+        "sourceUrl": "https://www.city.kitakyushu.lg.jp/kurashi/menu01_0367.html",
+        "sourceLabel": "北九州市 公式サイト（補助制度・税制）"
+      },
+      "solar": {
+        "status": "not_found",
+        "summary": "個人住宅向けに太陽光発電設備を補助する市の制度は確認できませんでした。市の補助は中小企業向けが中心です。福岡県が実施する共同購入事業には参加できます。",
+        "sourceUrl": "https://www.city.kitakyushu.lg.jp/kurashi/menu01_0367.html",
+        "sourceLabel": "北九州市 公式サイト（補助制度・税制）"
+      }
+    },
+    "kumamoto": {
+      "battery": {
+        "status": "found",
+        "programName": "熊本市省エネルギー機器等導入推進事業補助金（令和8年度）",
+        "summary": "固定価格買取制度が満了した世帯が対象で、1件につき8万円（前期35件）。環境省の蓄電池補助金の対象製品であることが条件です。",
+        "period": "前期の申請受付は令和8年5月11日〜10月31日。後期の件数は9月頃に公開予定。予算枠に達した時点で受付終了、同日で超過した場合は抽選。",
+        "sourceUrl": "https://www.city.kumamoto.jp/kiji00369554/index.html",
+        "sourceLabel": "熊本市 公式サイト"
+      },
+      "solar": {
+        "status": "found",
+        "programName": "熊本市省エネルギー機器等導入推進事業補助金（令和8年度）",
+        "summary": "太陽光発電設備は蓄電池併設型が対象で、1件につき8万円（前期80件）。ZEHは別枠で1件15万円。",
+        "period": "前期の申請受付は令和8年5月11日〜10月31日。後期の件数は9月頃に公開予定。予算枠に達した時点で受付終了、同日で超過した場合は抽選。",
+        "sourceUrl": "https://www.city.kumamoto.jp/kiji00369554/index.html",
+        "sourceLabel": "熊本市 公式サイト"
+      }
+    },
+    "naha": {
+      "battery": {
+        "status": "not_found",
+        "summary": "那覇市の住宅用省エネ設備補助事業は令和3年度で終了しており、蓄電池を補助する市の制度は確認できませんでした。国の制度は利用できます。",
+        "sourceUrl": "https://www.info.city.naha.okinawa.jp/kankyo/009748.html",
+        "sourceLabel": "那覇市 公式サイト（電子相談システム）"
+      },
+      "solar": {
+        "status": "not_found",
+        "summary": "那覇市の住宅用省エネ設備補助事業は令和3年度で終了しており、太陽光発電設備を補助する市の制度は確認できませんでした。国の制度は利用できます。",
+        "sourceUrl": "https://www.info.city.naha.okinawa.jp/kankyo/009748.html",
+        "sourceLabel": "那覇市 公式サイト（電子相談システム）"
+      }
     }
+  }
 }
